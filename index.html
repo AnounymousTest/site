@@ -9,7 +9,12 @@
 		function main(){
 			let valu = document.getElementById('valu')
 			let elem = document.getElementById('elem')
-			elem.innerHTML = "<p>Olá "+valu.value+", Bem Vindo!</p>"
+			elem.innerHTML = "<p>Olá "+valu.value+", Bem Vindo!</p><br/><input type='button' value='Voltar' onclick='back()'>"
+		}
+		function back(){
+			let elem = document.getElementById('elem')
+			elem.innerHTML = '<form method="GET" action="index.html">Nome:<input id="valu" maxlength="100" type="text" placeholder="Nome"><br/>Senha:<input id="pass" type="password" maxlength="100" placeholder="Senha"><br/><input type="button" value="Entrar" onclick="main()">'
+		</form>
 		}
 		</script>
 		<h1>Site Test</h1>
