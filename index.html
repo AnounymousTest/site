@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Olá, Mundo!</title>
+	</head>
+	
+	<body>
+		<script>
+		function main(){
+			let valu = document.getElementById('valu')
+			let elem = document.getElementById('elem')
+			elem.innerHTML = "<p>Olá "+valu.value+", Bem Vindo!</p>"
+		}
+		</script>
+		<h1>Site Test</h1>
+		<h2> <strong>Atenção:<strong/> Se você chegou até aqui aconcelho sair</h2>
+		<hr/>
+		<div id="elem">
+		<h3>Login</h3>
+		<form method="GET" action="index.html">
+			Nome:<input id="valu" type="text" placeholder="Nome"><br/>
+			Senha:<input id="pass" type="password" placeholder="Senha"><br/>
+			<input type="button" value="Entrar" onclick="main()">
+		</form>
+		</div>
+		
+	</body>
+</html>
